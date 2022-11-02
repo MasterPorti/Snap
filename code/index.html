@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" />
+    <link rel="stylesheet" href="./stylesheet/index.css" />
+    <title>Snap</title>
+  </head>
+  <body>
+    <div class="nav-mobile-items hide" id="nav-mobile">
+      <div class="blur" onclick="activeNavMobile();">
+ 
+      </div>
+      <div class="menu-mobile-container">
+       <img class="icon-close-menu" src="./img/icon-close-menu.svg" onclick="activeNavMobile();"> 
+        <ul>
+          <li onclick="activeFeatures();" >Features <img class="arrow-nav-mobile" src="./img/icon-arrow-up.svg">
+            <ul class="no-bottom hide" id="features" >
+              <li class="submenu-navbar"><img class="mobile-icon-nav" src="./img/icon-todo.svg" >Todo list</li>
+              <li class="submenu-navbar"><img class="mobile-icon-nav" src="./img/icon-calendar.svg" >Calendar</li>
+              <li class="submenu-navbar"><img class="mobile-icon-nav" src="./img/icon-reminders.svg" >Reminders</li>
+              <li class="submenu-navbar no-bottom"><img class="mobile-icon-nav" src="./img/icon-planning.svg" >Planning</li>
+            </ul>
+          </li>
+          <li onclick="activeCompany();" >Company <img class="arrow-nav-mobile" src="./img/icon-arrow-up.svg">
+            <ul class="no-bottom hide" id="company" >
+              <li class="submenu-navbar">History</li>
+              <li class="submenu-navbar">Our Team</li>
+              <li class="submenu-navbar no-bottom">Blog</li>
+            </ul>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </ul>
+      </div> 
+     </div>
+    <nav class="nav-desktop">
+      <ul>
+        <li><img class="logo-navbar" src="./img/logo.svg" /></li>
+        <li>
+          Features
+          <img class="arrow-up" src="./img/icon-arrow-up.svg" />
+          <ul class="sub-navbar fisrt">
+            <li>
+              <img class="subnavbar-icon" src="./img/icon-todo.svg" />Todo List
+            </li>
+            <li>
+              <img
+                class="subnavbar-icon"
+                src="./img/icon-calendar.svg"
+              />Calendar
+            </li>
+            <li>
+              <img
+                class="subnavbar-icon"
+                src="./img/icon-reminders.svg"
+              />Reminders
+            </li>
+            <li>
+              <img
+                class="subnavbar-icon"
+                src="./img/icon-planning.svg"
+              />Planning
+            </li>
+          </ul>
+        </li>
+        <li>
+          Company
+          <img class="arrow-up" src="./img/icon-arrow-up.svg" />
+          <ul class="sub-navbar second">
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </ul>
+        </li>
+        <li>Careers</li>
+        <li>About</li>
+      </ul>
+      <div class="login-buttons">
+        <div class="login">Login</div>
+        <div class="register">Register</div>
+      </div>
+    </nav>   
+    <nav class="nav-mobile">
+      <img src="./img/logo.svg" />
+      <img src="./img/icon-menu.svg" onclick="activeNavMobile();" />
+    </nav> 
+    <section class="section-desktop"> 
+      <div class="container-text">
+        <span class="title top">Make</span>
+        <span class="title">remote work</span>
+        <span class="subTile titletop"
+          >Get your team in sync, no matter your location.</span
+        >
+        <span class="subTile titlemid"
+          >Streamline processes,create team rituals, and</span
+        >
+        <span class="subTile titlemid">watch productivity soar.</span>
+        <div class="learn">Learn more</div>
+        <div class="container-brands">
+          <img class="brand-icon" src="./img/client-databiz.svg" />
+          <img class="brand-icon" src="./img/client-audiophile.svg" />
+          <img class="brand-icon" src="./img/client-meet.svg" />
+          <img class="brand-icon" src="./img/client-maker.svg" />
+        </div>
+      </div>
+      <img class="img-section" src="./img/image-hero-desktop.png" />
+    </section>
+    <section class="section-mobile">
+      <img src="./img/image-hero-mobile.png" />
+      <span class="title-mobile">Make remote work</span>
+      <span class="subtitle-mobile">Get your team in sync, no matter your</span>
+      <span class="subtitle-mobile">location. Streamline processes, create</span>
+      <span class="subtitle-mobile">team rituals, and watch productivity soar.</span>
+      <div class="conteiner-learn">
+        <span class="learn-mobile">Learn more</span>
+      </div>
+      <div class="container-brands">
+        <img class="brand-icon-mobile" src="./img/client-databiz.svg" />
+        <img class="brand-icon-mobile" src="./img/client-audiophile.svg" />
+        <img class="brand-icon-mobile" src="./img/client-meet.svg" />
+        <img class="brand-icon-mobile" src="./img/client-maker.svg" />
+      </div>
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
